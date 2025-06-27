@@ -1,0 +1,74 @@
+---
+import '../styles/global.css';
+import '../styles/hero.css';
+import NavbarReact from '../components/NavbarReact.jsx';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Legal Template - Professional Legal Website</title>
+	</head>
+	<body>
+		<!-- React Navbar -->
+		<NavbarReact siteName="Legal Firm" client:load />
+		
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="hero-background">
+				<div class="hero-overlay"></div>
+			</div>
+			<div class="hero-content">
+				<div class="container relative h-full flex flex-col justify-end">
+					<h1 class="hero-title text-center">Jones & Brown Legal</h1>
+					<div class="flex justify-between items-end w-full absolute bottom-0 left-0 right-0 px-8 pb-8">
+						<h2 class="hero-p font-semibold text-3xl md:text-4xl lg:text-5xl">Deep expertise, decisive courtroom presence</h2>
+						<p class="hero-p text-base md:text-lg lg:text-xl text-right max-w-md">We've been serving the Los Angeles area with expert legal counsel since 1976.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<main class="container">
+			<section class="section">
+				<h2>Our Practice Areas</h2>
+				<p>Comprehensive legal services tailored to meet your business and personal needs.</p>
+				
+				<div class="grid grid-2 gap-lg mt-xl">
+					<div class="card">
+						<h3>Corporate Law</h3>
+						<p>Comprehensive legal services for businesses of all sizes, including formation, compliance, and strategic counsel.</p>
+						<a href="/services" class="btn">Learn More</a>
+					</div>
+					
+					<div class="card">
+						<h3>Litigation</h3>
+						<p>Expert representation in civil and commercial litigation with a proven track record of successful outcomes.</p>
+						<a href="/services" class="btn">Learn More</a>
+					</div>
+				</div>
+			</section>
+			
+			<section class="section section-light">
+				<h2>Why Choose Us</h2>
+				<div class="grid grid-3 gap-lg">
+					<div class="card">
+						<h4>Experience</h4>
+						<p>Over 20 years of combined legal experience across multiple practice areas.</p>
+					</div>
+					<div class="card">
+						<h4>Personal Attention</h4>
+						<p>Direct access to attorneys with personalized service for every client.</p>
+					</div>
+					<div class="card">
+						<h4>Results</h4>
+						<p>Proven track record of successful outcomes and client satisfaction.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html> 
