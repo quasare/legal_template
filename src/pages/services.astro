@@ -1,8 +1,7 @@
 ---
 import '../styles/global.css';
-import '../styles/hero.css';
-import HomepageLayout from '../components/HomepageLayout.jsx';
-import Homepage from '../components/Homepage.jsx';
+import ServicesLayout from '../components/ServicesLayout.jsx';
+import Services from '../components/Services.jsx';
 ---
 
 <html lang="en">
@@ -11,11 +10,11 @@ import Homepage from '../components/Homepage.jsx';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Legal Template - Professional Legal Website</title>
+		<title>Services - Jones & Brown Legal</title>
 	</head>
 	<body>
-		<HomepageLayout client:load>
-			<Homepage client:load />
-		</HomepageLayout>
+		<ServicesLayout client:load>
+			<Services client:load />
+		</ServicesLayout>
 	</body>
-</html>
+</html> 

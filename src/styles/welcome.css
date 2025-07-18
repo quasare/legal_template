@@ -1,0 +1,191 @@
+/* Welcome Section Styles */
+.welcome-section {
+  width: 100%;
+  padding: 8rem 12rem 11rem 9rem; /* pt-32 pb-44 pl-36 pr-48 */
+  background-color: rgb(255, 247, 237); /* bg-orange-50 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.5rem; /* gap-14 */
+  overflow: hidden;
+}
+
+.welcome-container {
+  width: 100%;
+  max-width: 73.75rem; /* max-w-[1180px] */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem; /* gap-14 */
+}
+
+.welcome-title {
+  width: 100%;
+  text-align: start;
+  color: black;
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 500; /* font-medium */
+  font-family: 'Geist', sans-serif;
+  line-height: 2.25rem; /* leading-9 */
+}
+
+.welcome-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3rem; /* gap-12 */
+}
+
+.welcome-text-container {
+  width: 100%;
+  max-width: 58.875rem; /* w-[942px] */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3rem; /* gap-12 */
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.welcome-text {
+  flex: 1;
+  min-width: 20rem;
+  text-align: start;
+  color: black;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 400; /* font-normal */
+  font-family: 'Geist', sans-serif;
+  line-height: normal;
+}
+
+.welcome-button {
+  padding: 1rem 1.5rem; /* px-6 py-4 */
+  background-color: #C4A35A;/* bg-orange-400 */
+  border-radius: 31.25rem; /* rounded-[500px] */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem; /* gap-2.5 */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.welcome-button:hover {
+  background-color: rgb(249, 115, 22); /* darker orange on hover */
+}
+
+.button-text {
+  text-align: center;
+  color: white;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 400; /* font-normal */
+  font-family: 'Geist', sans-serif;
+  line-height: 1.375; /* leading-snug */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) { /* lg breakpoint */
+  .welcome-section {
+    padding: 6rem 8rem 8rem 6rem;
+    gap: 3rem;
+  }
+  
+  .welcome-container {
+    max-width: 100%;
+    gap: 3rem;
+  }
+  
+  .welcome-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .welcome-text-container {
+    max-width: 100%;
+    gap: 2rem;
+  }
+  
+  .welcome-text {
+    min-width: 18rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) { /* md breakpoint */
+  .welcome-section {
+    padding: 4rem 2rem 6rem 2rem;
+    gap: 2.5rem;
+  }
+  
+  .welcome-container {
+    gap: 2.5rem;
+  }
+  
+  .welcome-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+  
+  .welcome-content {
+    gap: 2rem;
+  }
+  
+  .welcome-text-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .welcome-text {
+    min-width: 100%;
+    font-size: 0.875rem;
+  }
+  
+  .welcome-button {
+    padding: 0.875rem 1.25rem;
+  }
+  
+  .button-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) { /* sm breakpoint */
+  .welcome-section {
+    padding: 3rem 1rem 4rem 1rem;
+    gap: 2rem;
+  }
+  
+  .welcome-container {
+    gap: 2rem;
+  }
+  
+  .welcome-title {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  
+  .welcome-content {
+    gap: 1.5rem;
+  }
+  
+  .welcome-text-container {
+    gap: 1rem;
+  }
+  
+  .welcome-text {
+    font-size: 0.75rem;
+  }
+  
+  .welcome-button {
+    padding: 0.75rem 1rem;
+  }
+  
+  .button-text {
+    font-size: 0.875rem;
+  }
+} 

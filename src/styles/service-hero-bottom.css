@@ -1,0 +1,32 @@
+/* Service Hero Bottom Styles */
+.service-hero-bottom {
+  width: 100%;
+  height: clamp(20rem, 50vh, 40rem);
+  background-image: url('/services/services_hero_bottom.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) { /* lg breakpoint */
+  .service-hero-bottom {
+    height: clamp(18rem, 45vh, 35rem);
+  }
+}
+
+@media (max-width: 768px) { /* md breakpoint */
+  .service-hero-bottom {
+    height: clamp(15rem, 40vh, 30rem);
+  }
+}
+
+@media (max-width: 640px) { /* sm breakpoint */
+  .service-hero-bottom {
+    height: clamp(12rem, 35vh, 25rem);
+  }
+} 

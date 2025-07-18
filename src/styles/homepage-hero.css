@@ -1,0 +1,142 @@
+/* Homepage Hero Styles */
+.homepage-hero {
+  width: 100%;
+  min-height: 60vh;
+  height: 60vw;
+  max-height: 800px;
+  padding: 1.5rem 5vw 4rem 5vw;
+  background-image: url('/Top_HERO.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 5vw;
+}
+
+.homepage-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero-container {
+  width: 100%;
+  min-height: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 5vw;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  text-align: start;
+  color: rgb(244, 244, 245);
+  font-size: clamp(2.5rem, 8vw, 8rem);
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.1;
+}
+
+.hero-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2vw;
+}
+
+.hero-tagline {
+  flex: 1 1 0;
+  max-width: 50%;
+  text-align: start;
+  color: rgb(244, 244, 245);
+  font-size: clamp(1.125rem, 2.5vw, 1.875rem);
+  font-weight: 500;
+  font-family: 'Geist', sans-serif;
+  line-height: 1.2;
+}
+
+.hero-description {
+  flex: 1 1 0;
+  max-width: 30%;
+  text-align: start;
+  color: rgb(244, 244, 245);
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  font-weight: 400;
+  font-family: 'Geist', sans-serif;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) { /* lg breakpoint */
+  .homepage-hero {
+    min-height: 50vh;
+    height: 55vw;
+    max-height: 700px;
+    padding: 1rem 4vw 3rem 4vw;
+    gap: 4vw;
+  }
+  .hero-title {
+    font-size: clamp(2rem, 7vw, 6rem);
+  }
+  .hero-tagline {
+    max-width: 60%;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+  .hero-description {
+    max-width: 40%;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+  }
+}
+
+@media (max-width: 768px) { /* md breakpoint - tablet and below */
+  .homepage-hero {
+    min-height: 40vh;
+    height: auto;
+    max-height: 600px;
+    padding: 1rem 3vw 2rem 3vw;
+    gap: 2rem;
+  }
+  .hero-container {
+    gap: 2rem;
+  }
+  .hero-title {
+    font-size: clamp(1.5rem, 8vw, 4rem);
+  }
+  .hero-content {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  .hero-tagline, .hero-description {
+    max-width: 100%;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+  }
+}
+
+@media (max-width: 640px) { /* sm breakpoint */
+  .homepage-hero {
+    min-height: 30vh;
+    max-height: 500px;
+    padding: 0.75rem 2vw 1.5rem 2vw;
+    gap: 1rem;
+  }
+  .hero-container {
+    gap: 1rem;
+  }
+  .hero-title {
+    font-size: clamp(1.25rem, 10vw, 3rem);
+  }
+  .hero-tagline, .hero-description {
+    font-size: clamp(0.875rem, 3vw, 1.125rem);
+  }
+} 

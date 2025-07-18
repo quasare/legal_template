@@ -1,0 +1,169 @@
+/* Footer Styles */
+.footer {
+  background-color: rgb(30, 41, 59); /* slate-800 equivalent */
+  padding: 4rem 9rem; /* py-16 px-36 equivalent */
+  overflow: hidden;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5rem; /* gap-20 equivalent */
+  width: 100%;
+}
+
+.footer-logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-placeholder {
+  width: 24rem; /* w-96 equivalent */
+  height: 2.75rem; /* h-11 equivalent */
+  background-color: white;
+}
+
+.footer-tagline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem; /* gap-2.5 equivalent */
+}
+
+.tagline-text {
+  flex: 1;
+  text-align: start;
+  color: white;
+  font-size: 1.125rem; /* text-lg equivalent */
+  font-weight: 400;
+  font-family: 'Geist', sans-serif;
+  line-height: normal;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2.75rem; /* gap-11 equivalent */
+  width: 100%;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.125rem; /* gap-0.5 equivalent */
+}
+
+.contact-item,
+.address-item,
+.social-item {
+  width: 16rem; /* w-64 equivalent */
+  text-align: start;
+  color: white;
+  font-size: 0.875rem; /* text-sm equivalent */
+  font-weight: 400;
+  font-family: 'Geist', sans-serif;
+  line-height: 1.25; /* leading-tight equivalent */
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.625rem; /* gap-2.5 equivalent */
+}
+
+.copyright-text {
+  width: 12rem; /* w-48 equivalent */
+  text-align: start;
+  color: white !important;
+  font-size: 0.875rem; /* text-sm equivalent */
+  font-weight: 400;
+  font-family: 'Geist', sans-serif;
+  line-height: 1.25; /* leading-tight equivalent */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) { /* lg breakpoint */
+  .footer {
+    padding: 3rem 4rem;
+  }
+  
+  .footer-content {
+    gap: 2rem;
+  }
+  
+  .contact-item,
+  .address-item,
+  .social-item {
+    width: 14rem;
+  }
+}
+
+@media (max-width: 768px) { /* md breakpoint */
+  .footer {
+    padding: 2rem 2rem;
+  }
+  
+  .footer-container {
+    gap: 3rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    width: 100%;
+  }
+  
+  .contact-item,
+  .address-item,
+  .social-item {
+    width: 100%;
+  }
+  
+  .logo-placeholder {
+    width: 18rem;
+    height: 2.25rem;
+  }
+  
+  .tagline-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) { /* sm breakpoint */
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer-container {
+    gap: 2rem;
+  }
+  
+  .logo-placeholder {
+    width: 12rem;
+    height: 2rem;
+  }
+  
+  .tagline-text {
+    font-size: 0.875rem;
+  }
+  
+  .contact-item,
+  .address-item,
+  .social-item,
+  .copyright-text {
+    font-size: 0.75rem;
+  }
+} 

@@ -1,0 +1,194 @@
+/* What We Offer Section Styles */
+.what-we-offer-section {
+  width: 100%;
+  padding: 6rem 9rem 8rem 9rem; /* pt-24 pb-32 pl-36 */
+  background-color: rgb(30, 41, 59); /* bg-slate-800 */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.offer-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.offer-header {
+  padding-right: 5rem; /* pr-20 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem; /* gap-2.5 */
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem; /* gap-2.5 */
+}
+
+.header-title {
+  text-align: start;
+  color: rgb(255, 247, 237); /* text-orange-50 */
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 500; /* font-medium */
+  font-family: 'Geist', sans-serif;
+  line-height: 2.25rem; /* leading-9 */
+}
+
+.offer-content {
+  width: 57.875rem; /* w-[926px] */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4rem; /* gap-16 */
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.service-item {
+  text-align: start;
+  color: rgb(255, 247, 237); /* text-orange-50 */
+  font-size: clamp(2rem, 8vw, 4.5rem); /* text-7xl */
+  font-weight: 400; /* font-normal */
+  font-family: 'Geist', sans-serif;
+  text-transform: capitalize;
+  line-height: 1.2; /* leading-[72.20px] */
+  margin-bottom: 0.5rem;
+}
+
+.service-item.more-services {
+  color: rgba(254, 243, 199, 0.5); /* text-amber-100/50 */
+}
+
+.services-button {
+  padding: 1rem 1.5rem; /* px-6 py-4 */
+  background-color: #C4A35A;/* bg-orange-400 */
+  border-radius: 31.25rem; /* rounded-[500px] */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem; /* gap-2.5 */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.services-button:hover {
+  background-color: rgb(249, 115, 22); /* darker orange on hover */
+}
+
+.button-text {
+  text-align: center;
+  color: white;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 400; /* font-normal */
+  font-family: 'Geist', sans-serif;
+  line-height: 1.375; /* leading-snug */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) { /* lg breakpoint */
+  .what-we-offer-section {
+    padding: 4rem 6rem 6rem 6rem;
+  }
+  
+  .offer-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .offer-header {
+    padding-right: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .header-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .offer-content {
+    width: 100%;
+    gap: 3rem;
+  }
+  
+  .service-item {
+    font-size: clamp(1.5rem, 6vw, 3.5rem);
+  }
+}
+
+@media (max-width: 768px) { /* md breakpoint */
+  .what-we-offer-section {
+    padding: 3rem 2rem 4rem 2rem;
+  }
+  
+  .offer-container {
+    gap: 2rem;
+  }
+  
+  .header-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+  
+  .offer-content {
+    gap: 2rem;
+  }
+  
+  .service-item {
+    font-size: clamp(1.25rem, 8vw, 2.5rem);
+    text-align: center;
+    width: 100%;
+  }
+  
+  .services-button {
+    padding: 0.875rem 1.25rem;
+    align-self: center;
+  }
+  
+  .button-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) { /* sm breakpoint */
+  .what-we-offer-section {
+    padding: 2rem 1rem 3rem 1rem;
+  }
+  
+  .offer-container {
+    gap: 1.5rem;
+  }
+  
+  .header-title {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  
+  .offer-content {
+    gap: 1.5rem;
+  }
+  
+  .service-item {
+    font-size: clamp(1rem, 10vw, 2rem);
+  }
+  
+  .services-button {
+    padding: 0.75rem 1rem;
+  }
+  
+  .button-text {
+    font-size: 0.875rem;
+  }
+} 

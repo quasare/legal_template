@@ -1,0 +1,183 @@
+/* Services Page Styles */
+.services-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-hero {
+  width: 100%;
+  min-height: 40vh;
+  background-color: rgb(30, 41, 59); /* bg-slate-800 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 60rem;
+}
+
+.hero-title {
+  color: rgb(255, 247, 237); /* text-orange-50 */
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 600;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  color: rgb(244, 244, 245); /* text-zinc-100 */
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 400;
+  font-family: 'Geist', sans-serif;
+  line-height: 1.6;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.services-main {
+  flex: 1;
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.services-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.services-section h2 {
+  color: black;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 600;
+  font-family: 'Geist', sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: rgb(248, 250, 252); /* bg-slate-50 */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(226, 232, 240); /* border-slate-200 */
+  transition: all 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color:#C4A35A; /* border-orange-400 */
+}
+
+.service-card h3 {
+  color: rgb(30, 41, 59); /* text-slate-800 */
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Geist', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: rgb(71, 85, 105); /* text-slate-600 */
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Geist', sans-serif;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) { /* lg breakpoint */
+  .services-hero {
+    min-height: 35vh;
+    padding: 3rem 1.5rem;
+  }
+  
+  .services-main {
+    padding: 3rem 1.5rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) { /* md breakpoint */
+  .services-hero {
+    min-height: 30vh;
+    padding: 2rem 1rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  
+  .hero-subtitle {
+    font-size: clamp(0.875rem, 3vw, 1.125rem);
+  }
+  
+  .services-main {
+    padding: 2rem 1rem;
+  }
+  
+  .services-section h2 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 2rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .service-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) { /* sm breakpoint */
+  .services-hero {
+    min-height: 25vh;
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(1.75rem, 10vw, 2.5rem);
+  }
+  
+  .hero-subtitle {
+    font-size: clamp(0.75rem, 3.5vw, 1rem);
+  }
+  
+  .services-main {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .services-section h2 {
+    font-size: clamp(1.25rem, 8vw, 1.75rem);
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-card {
+    padding: 1rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.125rem;
+  }
+  
+  .service-card p {
+    font-size: 0.875rem;
+  }
+} 

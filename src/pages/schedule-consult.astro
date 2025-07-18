@@ -1,0 +1,20 @@
+---
+import '../styles/global.css';
+import ScheduleConsultLayout from '../components/ScheduleConsultLayout.jsx';
+import ScheduleConsult from '../components/ScheduleConsult.jsx';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Schedule a Consultation - Jones & Brown Legal</title>
+	</head>
+	<body>
+		<ScheduleConsultLayout client:load>
+			<ScheduleConsult client:load />
+		</ScheduleConsultLayout>
+	</body>
+</html> 
