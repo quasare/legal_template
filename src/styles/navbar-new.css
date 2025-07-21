@@ -11,16 +11,16 @@
 
 .navbar-container {
   max-width: 80rem; /* 1280px equivalent */
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.625rem; /* gap-2.5 equivalent */
+  width: 100%;
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo-link {
@@ -29,17 +29,18 @@
   align-items: center;
 }
 
-.logo-placeholder {
-  width: 2rem; /* w-8 equivalent */
-  height: 1.5rem; /* h-6 equivalent */
-  background-color: rgb(244, 244, 245); /* zinc-100 equivalent */
+.logo-image {
+  width: clamp(1rem, 2vw, 1.5rem);
+  height: auto;
+  max-height: 1rem;
 }
 
 .navbar-menu {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   gap: 2.25rem; /* gap-9 equivalent */
+  margin-left: auto;
 }
 
 .nav-item {
@@ -122,9 +123,9 @@
     padding: 0.5rem 1rem;
   }
   
-  .logo-placeholder {
-    width: 1.5rem;
-    height: 1.125rem;
+  .logo-image {
+    width: clamp(1.5rem, 3vw, 2rem);
+    max-height: 1.5rem;
   }
   
   .nav-item {

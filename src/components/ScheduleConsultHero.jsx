@@ -6,7 +6,7 @@ const ScheduleConsultHero = () => {
     <div className="schedule-consult-hero">
       <div className="hero-content">
         <div className="hero-text-container">
-          <div className="hero-title">Let us help you</div>
+          {/* <div className="hero-title">Let us help you</div> */}
         </div>
       </div>
     </div>

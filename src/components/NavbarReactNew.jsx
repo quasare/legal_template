@@ -13,7 +13,7 @@ const NavbarReactNew = () => {
       <div className="navbar-container">
         <div className="navbar-brand">
           <a href="/" className="logo-link">
-            <div className="logo-placeholder"></div>
+            <img src="/Logo.svg" alt="Jones & Brown Legal" className="logo-image" />
           </a>
         </div>
         

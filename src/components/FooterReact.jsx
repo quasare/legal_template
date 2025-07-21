@@ -6,7 +6,7 @@ const FooterReact = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
-          <div className="logo-placeholder"></div>
+          <img src="/Logo.svg" alt="Jones & Brown Legal" className="logo-image" />
         </div>
         
         <div className="footer-tagline">

@@ -1,11 +1,13 @@
 import React from 'react';
 import '../styles/schedule-consult.css';
-import ScheduleHero from './ScheduleHero.jsx';
+import ScheduleConsultHero from './ScheduleConsultHero.jsx';
+import NextSteps from './NextSteps.jsx';
 
 const ScheduleConsult = () => {
   return (
     <div className="schedule-consult-page">
-      <ScheduleHero />
+      <ScheduleConsultHero />
+      <NextSteps />
     </div>
   );
 };

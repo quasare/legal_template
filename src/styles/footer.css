@@ -21,10 +21,10 @@
   align-items: center;
 }
 
-.logo-placeholder {
-  width: 24rem; /* w-96 equivalent */
-  height: 2.75rem; /* h-11 equivalent */
-  background-color: white;
+.logo-image {
+  width: clamp(6rem, 2vw, 18rem);
+  height: auto;
+  max-height: 2rem;
 }
 
 .footer-tagline {
@@ -132,9 +132,9 @@
     width: 100%;
   }
   
-  .logo-placeholder {
-    width: 18rem;
-    height: 2.25rem;
+  .logo-image {
+    width: clamp(9rem, 2vw, 18rem);
+    max-height: 2rem;
   }
   
   .tagline-text {
@@ -151,9 +151,9 @@
     gap: 2rem;
   }
   
-  .logo-placeholder {
-    width: 12rem;
-    height: 2rem;
+  .logo-image {
+    width: clamp(6rem, 2vw, 12rem);
+    max-height: 2rem;
   }
   
   .tagline-text {
